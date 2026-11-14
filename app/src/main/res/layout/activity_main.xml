@@ -1,1 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://android.com"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AI Tự Lập Trình &amp; Xuất APK"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/etGeminiKey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Dán Gemini API Key..."
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/etGithubToken"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Dán GitHub Token (ghp_...)..."
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/etRepo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên Repo GitHub (vd: dangkhoa2013b-del/AutoAPKBot)" />
+
+    <Switch
+        android:id="@+id/swProMode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chế độ AI: ⚡ Flash (Tắt) / 🧠 Pro (Bật)"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="4dp" />
+
+    <Button
+        android:id="@+id/btnPickFile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📎 Chọn Ảnh Mẫu hoặc File Code (.kt/.txt)" />
+
+    <TextView
+        android:id="@+id/tvFileName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chưa chọn tệp nào"
+        android:textSize="13sp"
+        android:layout_marginBottom="6dp" />
+
+    <EditText
+        android:id="@+id/etIdea"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:gravity="top"
+        android:hint="Nhập yêu cầu hoặc mô tả app cần AI tự code..." />
+
+    <Button
+        android:id="@+id/btnBuild"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🚀 AI Tự Code &amp; Xuất APK"
+        android:layout_marginTop="6dp" />
+
+    <Button
+        android:id="@+id/btnDirectPush"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="⚡ Ném Thẳng File Tạo Tay Xuất APK (Bỏ qua AI)"
+        android:layout_marginTop="4dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:id="@+id/tvLog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Trạng thái: Sẵn sàng..." />
+    </ScrollView>
+
+</LinearLayout>
 
